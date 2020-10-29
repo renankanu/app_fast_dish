@@ -1,3 +1,4 @@
+import 'package:app_fast_dish/app/utils/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'login_controller.dart';
@@ -11,14 +12,10 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends ModularState<LoginPage, LoginController> {
-  //use 'controller' variable to access controller
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      backgroundColor: CustomColors.alizarinCrimson,
       body: Column(
         children: <Widget>[],
       ),

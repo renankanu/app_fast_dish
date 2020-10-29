@@ -1,4 +1,5 @@
-import 'package:app_fast_dish/app/modules/intro_page/intro_page.dart';
+import 'package:app_fast_dish/app/modules/intro/intro_page.dart';
+import 'package:app_fast_dish/app/modules/login/login_module.dart';
 
 import 'app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -15,6 +16,7 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, child: (_, __) => IntroPage()),
+        ModularRouter('/login', module: LoginModule()),
         ModularRouter('/home', module: HomeModule()),
       ];
 
